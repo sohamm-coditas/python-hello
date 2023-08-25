@@ -3,8 +3,9 @@ pipelines:
   hello-world-pipeline:
     group: sample-pipelines
     materials:
-      git-repo: https://github.com/samohite09/python-hello.git
-      branch: main
+      backend:
+        git-repo: https://github.com/samohite09/python-hello.git
+        branch: main
     stages:
       - name: build
         jobs:
